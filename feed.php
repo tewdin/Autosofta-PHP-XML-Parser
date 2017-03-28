@@ -43,6 +43,7 @@ foreach ($xml->Vehicle as $item) {
 <a class="auto" href="/haku/?auto=<?php echo $carid; ?>"><div class="img" style="background: url('<?php echo $img[0]; ?>') no-repeat center center / cover"></div><h3><?php echo $title; ?></h3><div class="hinta"><?php echo $price; ?> €</div></a>
 
 <?php }}
+// ProcessWire's session
 $session->cars = array();
 $session->cars = $cars;
 
@@ -51,6 +52,7 @@ if($input->get->auto AND $page->id == 25487){
     $car = (int)$input->get->auto;
     foreach($cars as $item){
         if($item[0] == $car){
+            // Keep track about the cars you have watched before
             $session->recent[] = $car;
             $title = $item[1];
 ?>
