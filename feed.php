@@ -100,11 +100,6 @@ foreach($item[3] as $img){
 
 <div id="accessories"><h2>Lisävarusteet</h2><?php echo $item[18]; ?></div>
 
-<div id="seller">
-    <h2>Myyjän tiedot</h2>
-    <h3>Autojokeri Oy, Jari-Pekka Rajasalo</h3>
-    <p>0400 248 007, myynti@autojokeri.fi<br/>Kuurnankatu 40, 80130 Joensuu</p>
-</div>
 </div>
 
 <div class="right"><?php include('_form.php'); ?></div>
